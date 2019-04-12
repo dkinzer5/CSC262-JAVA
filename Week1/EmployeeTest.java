@@ -8,8 +8,8 @@ public class EmployeeTest
 
         // Display yearly salary
         System.out.println("***************************************************************");
-        System.out.printf("Dylan's yearly salary is : %f%n",Dylan.getMonthlySalary() * 12);
-        System.out.printf("David's yearly salary is : %f%n",David.getMonthlySalary() * 12);
+        System.out.printf("Dylan's yearly salary is : $%.2f%n",Dylan.getMonthlySalary() * 12);
+        System.out.printf("David's yearly salary is : $%.2f%n",David.getMonthlySalary() * 12);
 
         // Give Dylan 10% raise
         double dylanRaise = Dylan.getMonthlySalary() + Dylan.getMonthlySalary() * .1;
@@ -21,7 +21,7 @@ public class EmployeeTest
 
         // Display yearly salary after raise
         System.out.println("***************************************************************");
-        System.out.printf("Dylan's yearly salary after 10 percent raise is : %f%n",Dylan.getMonthlySalary() * 12);
-        System.out.printf("David's yearly salary after 10 percent raise is : %f%n",David.getMonthlySalary() * 12);
+        System.out.printf("Dylan's yearly salary after 10%% raise is : $%.2f%n",Dylan.getMonthlySalary() * 12);
+        System.out.printf("David's yearly salary after 10%% raise is : $%.2f%n",David.getMonthlySalary() * 12);
     }
 }
