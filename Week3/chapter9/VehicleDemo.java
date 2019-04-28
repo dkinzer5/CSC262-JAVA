@@ -23,7 +23,7 @@ public class VehicleDemo
                     Boeing.getMax_speed());
         }
 
-        // Even tho thehomework question only says to make the toString overides but
+        // Even tho the homework question only says to make the toString overides but
         // it never actually says to use them I am doing it anyways
         System.out.println();
         System.out.println(Mazda.toString());
