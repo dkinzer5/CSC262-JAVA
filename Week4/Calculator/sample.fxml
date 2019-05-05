@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" style="-fx-background-color: orange;" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="540.0" minHeight="540.0" prefHeight="540.0" />
+   </rowConstraints>
+   <children>
+      <BorderPane prefHeight="540.0" prefWidth="577.0" GridPane.rowIndex="1">
+         <left>
+            <TextField fx:id="firstNum" promptText="number 1" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="50.0" />
+               </BorderPane.margin></TextField>
+         </left>
+         <right>
+            <TextField fx:id="secondNum" promptText="number 2" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets right="50.0" />
+               </BorderPane.margin></TextField>
+         </right>
+         <center>
+            <Text scaleX="3.0" scaleY="3.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+" BorderPane.alignment="CENTER" />
+         </center>
+         <bottom>
+            <Button fx:id="calcButton" mnemonicParsing="false" onAction="#addIt" style="-fx-background-radius: 50; -fx-background-color: #4286f4;" text="Calculate" textFill="WHITE" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="200.0" />
+               </BorderPane.margin>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding></Button>
+         </bottom>
+         <top>
+            <TextArea fx:id="answerField" opacity="0.6" prefHeight="200.0" prefWidth="200.0" promptText="Answer will appear her" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+   </children>
+</GridPane>
